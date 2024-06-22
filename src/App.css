@@ -1,0 +1,179 @@
+/* App.css */
+
+/* General Styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #61dafb;
+}
+
+nav a:hover {
+  background-color: #21a1f1;
+}
+
+/* Form Container Styles */
+.form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.form-container input, .form-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-container button {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #21a1f1;
+}
+
+/* Product List Styles */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  width: 200px;
+}
+
+.product-item img {
+  max-width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.product-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .form-container input, .form-container button {
+    padding: 8px;
+    margin: 5px 0;
+  }
+
+  .product-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 30px;
+  }
+
+  nav {
+    gap: 5px;
+  }
+
+  nav a {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .form-container input, .form-container button {
+    padding: 6px;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .product-item {
+    width: 100%;
+  }
+}
