@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -24,30 +23,3 @@ const OrderTracking = () => {
 };
 
 export default OrderTracking;
-=======
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-
-const OrderTracking = () => {
-  const { orderId } = useParams();
-  const [order, setOrder] = useState(null);
-
-  useEffect(() => {
-    // Simulate fetching order details from backend
-    setOrder({ id: orderId, total: 300, status: 'In Transit' });
-  }, [orderId]);
-
-  if (!order) return <p>Loading order details...</p>;
-
-  return (
-    <div>
-      <h2>Order Tracking</h2>
-      <p>Order #{order.id}</p>
-      <p>Total: ${order.total}</p>
-      <p>Status: {order.status}</p>
-    </div>
-  );
-};
-
-export default OrderTracking;
->>>>>>> 17e709e417bb91a4e1743ca83d7ccd6b700e3d03

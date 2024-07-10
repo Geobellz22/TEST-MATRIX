@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -38,4 +37,3 @@ const Logout = () => {
 };
 
 export default Logout;
->>>>>>> 17e709e417bb91a4e1743ca83d7ccd6b700e3d03

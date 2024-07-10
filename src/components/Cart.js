@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -29,7 +28,6 @@ const Cart = () => {
 };
 
 export default Cart;
-=======
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -60,4 +58,3 @@ const Cart = () => {
 };
 
 export default Cart;
->>>>>>> 17e709e417bb91a4e1743ca83d7ccd6b700e3d03
