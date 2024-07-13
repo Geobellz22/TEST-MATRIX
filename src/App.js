@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import Login from './components/Login';
 import Home from './components/Home';
+import Login from './components/Login';
 import Register from './components/Register';
 import Profile from './components/Profile';
 import ProductList from './components/ProductList';
@@ -15,7 +15,6 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header>
-          {/* Removed navigation links */}
         </header>
         <Routes>
           <Route exact path="/" element={<Login />} />
