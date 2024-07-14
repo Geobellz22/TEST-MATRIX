@@ -17,9 +17,9 @@ function App() {
         <header>
         </header>
         <Routes>
-          <Route exact path="/" element={<Login />} />
+          <Route exact path="/login" element={<Login />} />
           <Route exact path="/register" element={<Register />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/products" element={<ProductList />} />
           <Route path="/cart" element={<Cart />} />
