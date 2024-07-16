@@ -1,30 +1,22 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home';
+import PortfolioDashboard from './components/PortfolioDashboard';
 import Login from './components/Login';
 import Register from './components/Register';
 import Profile from './components/Profile';
-import ProductList from './components/ProductList';
-import Cart from './components/Cart';
-import OrderHistory from './components/OrderHistory';
-import OrderTracking from './components/OrderTracking';
+
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <header>
-        </header>
         <Routes>
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/register" element={<Register />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<PortfolioDashboard />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/products" element={<ProductList />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/order-history" element={<OrderHistory />} />
-          <Route path="/order-tracking/:orderId" element={<OrderTracking />} />
         </Routes>
       </div>
     </BrowserRouter>

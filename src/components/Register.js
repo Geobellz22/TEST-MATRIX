@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { FaUser, FaEnvelope, FaLock, FaWallet } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 import './LoginRegister.css';
 
 const Register = () => {
