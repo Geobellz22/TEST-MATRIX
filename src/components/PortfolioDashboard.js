@@ -11,6 +11,17 @@ const investmentPlans = [
   { name: 'PREMIUM PLAN', return: '20%', amountRange: '$20,000 - UNLIMITED', duration: '48 hours' }
 ];
 
+const walletAddresses = [
+  { name: 'Bitcoin', address: 'bc1q372ruvgmqa0uwumdzqsvgvc6z2w030pxvkw4ww' },
+  { name: 'Tether USDT TRC 20', address: 'TB9JQFM5Jndp6hqvxvQvKa5RrbrprDkJVo' },
+  { name: 'Tron', address: 'TB9JQFM5Jndp6hqvxvQvKa5RrbrprDkJVo' },
+  { name: 'Ethereum', address: '0x1a158E08B0bd1ac5D991e85e3A9Dd373D21a1489' },
+  { name: 'BNB', address: 'bnb1ggnnlqthfqcx0rc58aagpypamcrcspsn6qm6j9' },
+  { name: 'Dogecoin', address: 'DEereXL4WAi4MNcVdCfTcBPMEB1a5UFMUe' },
+  { name: 'USDT ERC20', address: '0x1a158E08B0bd1ac5D991e85e3A9Dd373D21a1489' },
+  { name: 'Bitcoin Cash', address: 'qrm8ad75nechkxtaa7jyv577zdh7whze2qs28z4jj2' }
+];
+
 const PortfolioDashboard = () => {
   const [transactionHistory, setTransactionHistory] = useState([]);
   const [notifications, setNotifications] = useState([]);
@@ -51,6 +62,11 @@ const PortfolioDashboard = () => {
     fetchNotifications();
     fetchRatings();
   }, []);
+
+  const handleCopy = (address) => {
+    navigator.clipboard.writeText(address);
+    alert('Address copied to clipboard');
+  };
 
   return (
     <div className="dashboard">
@@ -127,6 +143,14 @@ const PortfolioDashboard = () => {
           </ul>
           <Link to="/referral" className="referral-link">Refer Now</Link>
         </div>
+
+        <h3>Direct Wallet Payments</h3>
+        {walletAddresses.map((wallet, index) => (
+          <div key={index} className="wallet-item">
+            <p>{wallet.name}: {wallet.address}</p>
+            <button onClick={() => handleCopy(wallet.address)}>Copy Address</button>
+          </div>
+        ))}
       </div>
     </div>
   );
