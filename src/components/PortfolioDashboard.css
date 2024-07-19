@@ -9,11 +9,15 @@
   }
   
   .dashboard header {
-    background-color: blue;
+    background-color: darkblue;
     color: white;
     padding: 20px;
+    width: 100%;
     text-align: center;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
   
   .dashboard header h1 {
@@ -33,7 +37,7 @@
   }
   
   .content {
-    background: url('/assets/images/download(1).jpg')no-repeat center center fixed;
+    /**background: url('/assets/images/download(1).jpg')no-repeat center center fixed;**/
     background-size: cover;
     min-height: 100vh;
     padding: 20px;
