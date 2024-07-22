@@ -1,0 +1,52 @@
+
+.company-profile {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .company-profile header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-content {
+    line-height: 1.6;
+  }
+  
+  .pdf-section {
+    margin-top: 20px;
+  }
+  
+  .pdf-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .pdf-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pdf-section li {
+    margin-bottom: 10px;
+  }
+  
+  .pdf-section a {
+    color: #0044cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .pdf-section a:hover {
+    color: #ffa500;
+  }
+  
+  .pdf-viewer {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  

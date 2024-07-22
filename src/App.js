@@ -12,7 +12,7 @@ import ChangePassword from './components/ChangePassword';
 import ReferralProgram from './components/ReferralProgram';
 import Ratings from './components/Ratings';
 import RatingsList from './components/RatingsList';
-
+import CompanyProfile from './components/CompanyProfile';
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +29,7 @@ function App() {
           <Route path="/referral-program" element={<ReferralProgram />} />
           <Route path="/ratings" element={<Ratings />} />
           <Route path="/ratings-list" element={<RatingsList />} />
+          <Route path="/company-profile" element={<CompanyProfile />} />
         </Routes>
       </div>
     </BrowserRouter>

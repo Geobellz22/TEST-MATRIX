@@ -80,6 +80,8 @@ const PortfolioDashboard = () => {
           <Link to="/security-questions" className="nav-link">Security Questions</Link>
           <Link to="/active-sessions" className="nav-link">Active Sessions</Link>
           <Link to="/change-password" className="nav-link">Change Password</Link>
+          <Link to="/company-profile" className="nav-link">CompanyProfile</Link>
+        
         </nav>
       </header>
       <div className="content">
